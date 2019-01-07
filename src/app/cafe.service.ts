@@ -14,7 +14,7 @@ export class CafeService {
     private http: HttpClient
   ) { }
 
-  private cafesUrl = 'http://kahvilapi.azurewebsites.net/api/values';
+  private cafesUrl = 'https://kahvilapi.azurewebsites.net/api/values';
 
   getCafes(): Observable<Cafe[]> {
     return this.http.get<Cafe[]>(this.cafesUrl)

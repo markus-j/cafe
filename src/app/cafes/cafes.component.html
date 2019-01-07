@@ -5,7 +5,7 @@
         <div class="photo">{{cafe.id}}</div> 
         <div class="details">
           <div class="name"><h2>{{cafe.name}}</h2></div>
-          <div class="description">{{cafe.description}}</div>
+          <div class="description">{{(cafe.description  | slice:0:35)+'..'}}</div>
         </div>
         <div class="button"><img class="buttonImg" src="../assets/arrow-fwd.svg" /></div>
       </div>
