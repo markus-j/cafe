@@ -1,0 +1,14 @@
+<ul class="cafes">
+  <li *ngFor="let cafe of cafes">
+    <a routerLink="/detail/{{cafe.id}}">
+      <div class="grid-container">
+        <div class="photo">{{cafe.id}}</div> 
+        <div class="details">
+          <div class="name"><h2>{{cafe.name}}</h2></div>
+          <div class="description">{{cafe.description}}</div>
+        </div>
+        <div class="button"><img class="buttonImg" src="../assets/arrow-fwd.svg" /></div>
+      </div>
+    </a>
+  </li>
+</ul>

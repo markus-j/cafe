@@ -1,0 +1,17 @@
+<div class="container" *ngIf="cafe">
+  
+  <div class="name-photo area">
+      <h2 class="cafe-name">{{cafe.name | uppercase}}</h2>
+      <img class="details-photo" src="../assets/placeholder.png" />
+  </div>
+  
+  <div class="texts area">
+      <div class="description"><h3>Kuvaus</h3>{{cafe.description}}</div>
+      <div class="street"><h3>Osoite</h3>{{cafe.address.street}}</div>
+      <div>{{cafe.address.postalCode}} {{cafe.address.city}}</div>
+  </div>
+  
+
+  <button class="backButton" (click)="goBack()" style="vertical-align:middle"><span> Takaisin</span></button>
+</div>
+
